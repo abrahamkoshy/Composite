@@ -17,6 +17,8 @@ int _tmain(int argc, _TCHAR* argv[])
     root->Add(leaf2);
     root->Add(composite);
 
+    root->Operation();
+
     root->Remove(leaf2);
 
     //clean up

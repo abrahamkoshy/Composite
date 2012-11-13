@@ -20,6 +20,10 @@ Composite* Composite::GetComposite()
 
 void Composite::Operation ()
 {
+    for (auto it = composite.begin(); it != composite.end(); it++)
+    {
+        (*it)->Operation();
+    }
 }
 
 void Composite::Add (Component* component)
